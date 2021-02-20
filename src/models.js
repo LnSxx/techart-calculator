@@ -1,4 +1,4 @@
-export const appStates = {
+export const APP_STATES = {
   BUILDING_SELECTION: 'BUILDING_SELECTION',
   HEIGHT_SETTING: 'HEIGHT_SETTING',
   MATERIAL_SELECTION: 'MATERIAL_SELECTION',
@@ -7,14 +7,6 @@ export const appStates = {
   PRICE_CALCULATION_SUCCESS: 'BACKEND_ANSWER_SUCCESS',
   PRICE_CALCULATION_FAIL: 'BACKEND_ANSWER_FAIL',
   CALCULATION_RESULT: 'CALCULATION_RESULT',
-};
-
-export const APP_STEP_MESSAGES = {
-  STEP_1: 'Шаг 1',
-  STEP_2: 'Шаг 2',
-  STEP_3: 'Шаг 3',
-  STEP_4: 'Шаг 4',
-  RESULT: 'Результат расчета',
 };
 
 export const materials = {

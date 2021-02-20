@@ -65,7 +65,12 @@ function SetSizesCard() {
           justifyContent="center"
           padding="10px"
         >
-          <Button colorScheme="teal" size="md" variant="outline" onClick={() => { dispatch(resetStore()); }}>
+          <Button
+            colorScheme="teal"
+            size="md"
+            variant="outline"
+            onClick={() => { dispatch(resetStore()); }}
+          >
             Отмена
           </Button>
           <Button

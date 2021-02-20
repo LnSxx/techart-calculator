@@ -3,7 +3,7 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { appStates } from '../../models';
+import { APP_STATES } from '../../models';
 
 import BuildingSelection from '../BuildingSelection/BuildingSelection';
 import SetHeightCard from '../SetHeightCard/SetHeightCard';
@@ -15,17 +15,17 @@ import ErrorResponseCard from '../ErrorResponseCard/ErrorResponseCard';
 
 function getRequiredCard(appStep) {
   switch (appStep) {
-    case appStates.BUILDING_SELECTION:
+    case APP_STATES.BUILDING_SELECTION:
       return <BuildingSelection />;
-    case appStates.HEIGHT_SETTING:
+    case APP_STATES.HEIGHT_SETTING:
       return <SetHeightCard />;
-    case appStates.MATERIAL_SELECTION:
+    case APP_STATES.MATERIAL_SELECTION:
       return <SelectMaterialCard />;
-    case appStates.SIZES_SETTING:
+    case APP_STATES.SIZES_SETTING:
       return <SetSizesCard />;
-    case appStates.CALCULATION_RESULT:
+    case APP_STATES.CALCULATION_RESULT:
       return <PriceCalculationResult />;
-    case appStates.PRICE_CALCULATION_FAIL:
+    case APP_STATES.PRICE_CALCULATION_FAIL:
       return <ErrorResponseCard />;
     default:
       return <Spinner />;

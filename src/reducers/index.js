@@ -1,5 +1,5 @@
 import { ACTION_NAMES } from '../actions/actions';
-import { appStates } from '../models';
+import { APP_STATES } from '../models';
 
 const initialState = {
   selectedBuilding: null,
@@ -9,7 +9,7 @@ const initialState = {
   wallSizeY: null,
   priceCalculationResult: null,
   priceCalculationFail: null,
-  step: appStates.BUILDING_SELECTION,
+  step: APP_STATES.BUILDING_SELECTION,
   stepNumber: 1,
 };
 
@@ -19,7 +19,7 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         selectedBuilding: action.building,
-        step: appStates.HEIGHT_SETTING,
+        step: APP_STATES.HEIGHT_SETTING,
         stepNumber: state.stepNumber + 1,
       };
     case ACTION_NAMES.SELECT_GARAGE:
@@ -27,21 +27,21 @@ export default function rootReducer(state = initialState, action) {
         ...state,
         selectedBuilding: action.building,
         selectedNumberOfFloors: 1,
-        step: appStates.MATERIAL_SELECTION,
+        step: APP_STATES.MATERIAL_SELECTION,
         stepNumber: state.stepNumber + 1,
       };
     case ACTION_NAMES.SET_HEIGHT:
       return {
         ...state,
         selectedNumberOfFloors: action.payload,
-        step: appStates.MATERIAL_SELECTION,
+        step: APP_STATES.MATERIAL_SELECTION,
         stepNumber: state.stepNumber + 1,
       };
     case ACTION_NAMES.SELECT_MATERIAL:
       return {
         ...state,
         selectedMaterial: action.payload,
-        step: appStates.SIZES_SETTING,
+        step: APP_STATES.SIZES_SETTING,
         stepNumber: state.stepNumber + 1,
       };
     case ACTION_NAMES.SET_SIZES:
@@ -49,7 +49,7 @@ export default function rootReducer(state = initialState, action) {
         ...state,
         wallSizeX: action.sizeX,
         wallSizeY: action.sizeY,
-        step: appStates.CALCULATION_RESULT,
+        step: APP_STATES.CALCULATION_RESULT,
       };
     case ACTION_NAMES.PRICE_CALCULATION_SUCCESS:
       return {
@@ -60,7 +60,7 @@ export default function rootReducer(state = initialState, action) {
       return {
         ...state,
         priceCalculationFail: action.payload,
-        step: appStates.PRICE_CALCULATION_FAIL,
+        step: APP_STATES.PRICE_CALCULATION_FAIL,
       };
     case ACTION_NAMES.RESET_STORE:
       return initialState;
