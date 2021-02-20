@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/techart-calculator/static/css/main.4cd25340.chunk.css",
+    "main.js": "/techart-calculator/static/js/main.a13b1c79.chunk.js",
+    "main.js.map": "/techart-calculator/static/js/main.a13b1c79.chunk.js.map",
+    "runtime-main.js": "/techart-calculator/static/js/runtime-main.481feee9.js",
+    "runtime-main.js.map": "/techart-calculator/static/js/runtime-main.481feee9.js.map",
+    "static/js/2.35630460.chunk.js": "/techart-calculator/static/js/2.35630460.chunk.js",
+    "static/js/2.35630460.chunk.js.map": "/techart-calculator/static/js/2.35630460.chunk.js.map",
+    "index.html": "/techart-calculator/index.html",
+    "static/css/main.4cd25340.chunk.css.map": "/techart-calculator/static/css/main.4cd25340.chunk.css.map",
+    "static/js/2.35630460.chunk.js.LICENSE.txt": "/techart-calculator/static/js/2.35630460.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.481feee9.js",
+    "static/js/2.35630460.chunk.js",
+    "static/css/main.4cd25340.chunk.css",
+    "static/js/main.a13b1c79.chunk.js"
+  ]
+}
